@@ -1,0 +1,138 @@
+# ============================================================
+# .gitignore — Crime Rate Analysis Project
+# ============================================================
+
+# ----- Raw & Large Data Files -----
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.h5
+*.hdf5
+data/raw/
+data/external/
+
+# Keep the clean output CSV if explicitly tracked
+# !clean_data.csv  # uncomment to include clean data
+
+# ----- Power BI -----
+# .pbix files can be large; track only if repo size allows
+# Comment out the line below to include the dashboard
+*.pbix
+*.pbit
+
+# ----- Jupyter Notebook Checkpoints -----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.ipynb_meta
+
+# ----- Python Environment -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+.env
+.env.*
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ----- Python Build & Distribution -----
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+MANIFEST
+*.whl
+
+# ----- IDEs & Editors -----
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.iws
+
+# Spyder
+.spyderproject.cfg
+.spyproject
+
+# Jupyter extensions
+.jupyter/
+profile_default/
+ipython_config.py
+
+# ----- OS Generated Files -----
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# ----- Logs & Debugging -----
+*.log
+*.out
+logs/
+debug/
+
+# ----- Temporary / Cache Files -----
+*.tmp
+*.temp
+*.swp
+*.swo
+.cache/
+.mypy_cache/
+.pytest_cache/
+.tox/
+htmlcov/
+.coverage
+coverage.xml
+
+# ----- Google Colab Credentials -----
+token.json
+credentials.json
+client_secret*.json
+service_account*.json
+*.pkl
+*.pickle
+
+# ----- Output / Generated Files -----
+# Uncomment below to exclude generated PDFs/reports from git
+# reports/
+# *.pdf
+
+# Keep the report PDF tracked
+# !Crime_Rate_Analysis_Report.pdf
+
+# ----- Secrets & Credentials -----
+.env
+secrets.yaml
+secrets.json
+config/secrets.*
+api_keys.txt
